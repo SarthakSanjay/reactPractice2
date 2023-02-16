@@ -1,0 +1,12 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+.App{
+  background-color: rgb(234, 78, 163);
+  /* width: 100vw;
+  height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
