@@ -15,8 +15,8 @@ const Accordian = () => {
   )
 }
 const Container = styled.div`
-background-color: white;
-height: 400px;
+background-color: #eccef7;
+min-height: 400px;
 width: 700px;
 display: flex;
 .rightSideDiv{
@@ -28,7 +28,7 @@ display: flex;
 }
 h2{
   max-width: 200px;
-  margin: 10px;
+  margin: 20px 10px;
 }
 `
 export default Accordian
