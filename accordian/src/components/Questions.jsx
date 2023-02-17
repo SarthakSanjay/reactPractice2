@@ -50,6 +50,7 @@ padding: 0px 10px;
     }
     p{
         max-width: 450px;
+        max-height: 100px;
     }
 }
 `
