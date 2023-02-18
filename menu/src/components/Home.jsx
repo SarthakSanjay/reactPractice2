@@ -15,13 +15,15 @@ const Home = () => {
   )
 }
 const Container = styled.div`
-min-height: 100vh;
+height: 100%;
 max-width: 100vw;
-height: 100vh;
 width: 100vw;
 background-color:  rgb(200, 229, 240) ;
 h1{
   text-align: center;
+  width: 200px;
+  border-bottom: 2px solid gold;
+  margin: 0 auto;
     
 }
 

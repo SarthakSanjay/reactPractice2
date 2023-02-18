@@ -10,6 +10,9 @@ const Menu = () => {
 }
 
 const Container = styled.div`
+  max-width: 74vw;
+  /* border: 2px solid saddlebrown; */
+  margin: 0 auto;
 
 `
 
