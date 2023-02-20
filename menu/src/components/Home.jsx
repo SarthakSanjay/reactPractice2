@@ -1,13 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import MenuBar from './MenuBar'
 import Menu from './Menu'
+import menu from './data'
+
+const allCategory = ["All",...new Set( menu.map((obj) => obj.category))] 
+
+
 const Home = () => {
+  const [menuItems , setMenuItems] = useState(menu)
+  const [menuCategory , setMenuCategory] = useState(allCategory)
+
+  const filterItems = (menuCategory) => {
+    if( menuCategory === "All") {
+      setMenuItems(menuItems)
+      return
+    }
+    const newItems = menu.filter((item)=> item.category === menuCategory)
+    setMenuCategory(newItems)
+  }
   return (
     <Container>
     <h1>Menu</h1>
-    <MenuBar />
-    <Menu />
+    <MenuBar filterItems={filterItems} menuCategory={menuCategory} />
+    <Menu menu={menuItems} />
 
 
 

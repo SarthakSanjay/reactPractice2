@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import menu from './data'
+// import menu from './data'
 
-const MenuItems = () => {
+const MenuItems = (props) => {
   return (
     <Container>
         {
-            menu.map((obj)=>{
+            props.menu.map((obj)=>{
                 return (
                     <Container1>
                       <img src={obj.img} />
@@ -38,13 +38,14 @@ height: 150px;
 max-height: 200px;
 /* border: 1px solid; */
 display: flex;
-margin: 10px auto;
+margin: 10px ;
 img{
   width: 200px;
   height: 150px;
   min-width: 200px;
-  border: 2px solid gold;
+  border: 3px solid gold;
   border-radius: 10px;
+  object-fit: cover;
 }
 .content{
   display: flex;

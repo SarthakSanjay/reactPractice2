@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import menu from './data'
 
-const MenuBar = () => {
+const MenuBar = ({filterItems , menuCategory}) => {
   return (
     <Container>
-     <h3>All</h3>
-     <h3>Breakfast</h3>
-     <h3>Lunch</h3>
-     <h3>Shakes</h3>
+      {menuCategory.map((category , index)=>{
+        return <button className='btn' type='button' key={index}
+        onClick={()=> filterItems(category)}
+        >{category}</button>
+      })}
     </Container>
   )
 }
