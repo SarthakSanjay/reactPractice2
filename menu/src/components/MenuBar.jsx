@@ -6,7 +6,7 @@ const MenuBar = ({filterItems , menuCategory}) => {
     <Container>
       {menuCategory.map((category , index)=>{
         return <button className='btn' type='button' key={index}
-        onClick={()=> filterItems(category)}
+        onClick={() => filterItems(category)}
         >{category}</button>
       })}
     </Container>

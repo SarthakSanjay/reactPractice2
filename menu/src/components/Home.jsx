@@ -4,7 +4,7 @@ import MenuBar from './MenuBar'
 import Menu from './Menu'
 import menu from './data'
 
-const allCategory = ["All",...new Set( menu.map((obj) => obj.category))] 
+const allCategory = ["All" , ...new Set( menu.map((obj) => obj.category))] 
 
 
 const Home = () => {
