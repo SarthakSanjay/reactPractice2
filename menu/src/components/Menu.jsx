@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import MenuItems from './MenuItems'
-const Menu = (props) => {
+const Menu = ({menu}) => {
   return (
     <Container>
-        <MenuItems menu={props.menu} key={props.id} />
+        <MenuItems menu={menu} key={menu.id} />
     </Container>
   )
 }
