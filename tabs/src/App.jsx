@@ -1,14 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useEffect, useState } from 'react'
 import './App.css'
+import BookList from './components/Booklist'
+import data from './components/data'
 import Hero from './components/Hero'
 
 function App() {
-  const [count, setCount] = useState(0)
+const [loading , setLoading] = useState(true)
+const [jobs , setJobs] = useState([])
+const [value, setValue] =useState(0)
 
+useEffect(()=>{
+  setJobs(data)
+  setLoading(false)
+},[])
+
+if(loading){
+  return (
+    <section>
+      <h1>Loading...</h1>
+    </section>
+  )
+}
   return (
     <div className="App">
-     <Hero />
+     {/* <Hero data={data} /> */}
+     <BookList />
     </div>
   )
 }

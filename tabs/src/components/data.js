@@ -10,7 +10,8 @@ const data = [
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quos cupiditate repellat nobis expedita laudantium maiores dolore, amet in, voluptas consequuntur est molestias maxime suscipit.",
 
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis saepe praesentium corporis temporibus dignissimos, voluptates sint illo officiis tempore pariatur doloribus enim illum quia maiores eveniet totam magni culpa cum!"
-        ]
+        ],
+        company:"Airbyte"
     },
     {
         id: "gaojjkj8y348dfgo",
@@ -23,7 +24,8 @@ const data = [
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quos cupiditate repellat nobis expedita laudantium maiores dolore, amet in, voluptas consequuntur est molestias maxime suscipit.",
 
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis saepe praesentium corporis temporibus dignissimos, voluptates sint illo officiis tempore pariatur doloribus enim illum quia maiores eveniet totam magni culpa cum!"
-        ]
+        ],
+        company:"Axios"
     },
     {
         id: "gaoj924794jdfgo",
@@ -36,7 +38,8 @@ const data = [
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quos cupiditate repellat nobis expedita laudantium maiores dolore, amet in, voluptas consequuntur est molestias maxime suscipit.",
 
             "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis saepe praesentium corporis temporibus dignissimos, voluptates sint illo officiis tempore pariatur doloribus enim illum quia maiores eveniet totam magni culpa cum!"
-        ]
+        ],
+        company: "Backpack"
     }
 ]
 

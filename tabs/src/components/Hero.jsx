@@ -1,15 +1,15 @@
 import React from 'react'
-import data from './data'
-const Hero = () => {
+const Hero = ({data}) => {
     
   return (
     <div>
         {
             data.map((object) =>{
                 return (
-                    <div>
+                    <div key={object.id}>
                         <h1>{object.title}</h1>
                         <h3>{object.dates}</h3>
+                        <p>{object.company}</p>
                     </div>
                 )
             })
